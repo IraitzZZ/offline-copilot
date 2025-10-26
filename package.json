@@ -1,0 +1,59 @@
+{
+  "name": "offline-copilot",
+  "version": "1.0.0",
+  "description": "A 100% offline AI coding assistant powered by local language models",
+  "keywords": [
+    "ai",
+    "copilot",
+    "offline",
+    "cli",
+    "code-generation",
+    "local-llm"
+  ],
+  "license": "MIT",
+  "author": "IraitzZZ",
+  "main": "dist/index.js",
+  "bin": {
+    "ocp": "./bin/offline-copilot.js",
+    "offline-copilot": "./bin/offline-copilot.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "prepare": "npm run build",
+    "start": "node dist/index.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "dependencies": {
+    "chalk": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "commander": "latest",
+    "fs": "latest",
+    "glob": "latest",
+    "inquirer": "latest",
+    "lucide-react": "^0.454.0",
+    "next": "16.0.0",
+    "onnxruntime-node": "latest",
+    "ora": "latest",
+    "os": "latest",
+    "path": "latest",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.10",
+    "@types/node": "^22",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "postcss": "^8.5",
+    "tailwindcss": "4.1.16",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
