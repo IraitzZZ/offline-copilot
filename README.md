@@ -1,5 +1,4 @@
 # Offline Copilot
-
 > A 100% offline AI coding assistant powered by local language models
 
 **Created by IraitzZZ**
@@ -8,7 +7,6 @@
 ![Node](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen.svg)
 
 ## 🚀 Features
-
 - **100% Offline** - No internet required after installation
 - **Lightweight** - Total size < 300 MB
 - **Cross-platform** - Works on Windows, Linux, and macOS
@@ -19,90 +17,73 @@
 ## 📦 Installation
 
 ### From npm
-
-\`\`\`bash
+```bash
 npm install -g offline-copilot
-\`\`\`
+```
 
 ### From source
-
-\`\`\`bash
+```bash
 git clone https://github.com/IraitzZZ/offline-copilot.git
 cd offline-copilot
 npm install
 npm run build
 npm link
-\`\`\`
+```
 
 ## 🎯 Quick Start
-
 1. **Initialize the tool** (downloads the model):
-
-\`\`\`bash
+```bash
 offline-copilot init
-\`\`\`
-
+```
 2. **Add @copilot comments to your code**:
-
-\`\`\`javascript
+```javascript
 // @copilot: create a function to validate email addresses
-
 // @copilot: add error handling for network requests
-\`\`\`
-
+```
 3. **Process the file**:
-
-\`\`\`bash
+```bash
 offline-copilot process myfile.js
-\`\`\`
-
+```
 4. **Review and confirm** the generated code!
 
 ## 📖 Usage
 
 ### Process a single file
-
-\`\`\`bash
+```bash
 offline-copilot process <file>
-\`\`\`
-
+```
 Options:
 - `-y, --yes` - Skip confirmation prompts
 - `-d, --dry-run` - Show changes without applying them
 
 ### Scan entire project
-
-\`\`\`bash
+```bash
 offline-copilot scan [directory]
-\`\`\`
-
+```
 Options:
 - `-p, --pattern <pattern>` - File pattern to match (default: `**/*.{js,ts,py,java,cpp,c,go,rs}`)
 
 ### Initialize/Download model
-
-\`\`\`bash
+```bash
 offline-copilot init
-\`\`\`
+```
 
 ## 🎨 CLI Design
-
 The CLI features a minimalist design with:
 - **Background**: Black
 - **Text**: White
 - **Accents**: Red (#cc0000) and Blue (#0066cc)
 - **Clear messages** with no visual noise
 
-\`\`\`
+```
   ╔═══════════════════════════════════════╗
-  ║  OFFLINE COPILOT                   ║
-  ║  100% Local AI Coding Assistant    ║
-  ╚═══════════════════════════════════╝
+  ║  OFFLINE COPILOT                      ║
+  ║  100% Local AI Coding Assistant       ║
+  ╚═══════════════════════════════════════╝
            Powered by IraitzZZ
-\`\`\`
+```
 
 ## 🔧 Supported Languages
-
 - JavaScript/TypeScript (`.js`, `.ts`)
 - Python (`.py`)
 - Java (`.java`)
@@ -111,24 +92,19 @@ The CLI features a minimalist design with:
 - Rust (`.rs`)
 
 ## 📝 Comment Syntax
-
 Offline Copilot recognizes the following comment patterns:
-
-\`\`\`javascript
+```javascript
 // @copilot: your instruction here
-\`\`\`
-
-\`\`\`python
+```
+```python
 # @copilot: your instruction here
-\`\`\`
-
-\`\`\`java
+```
+```java
 /* @copilot: your instruction here */
-\`\`\`
+```
 
 ## 🏗️ Project Structure
-
-\`\`\`
+```
 offline-copilot/
 ├── src/
 │   ├── index.ts              # CLI entry point
@@ -148,26 +124,22 @@ offline-copilot/
 ├── tsconfig.json
 ├── README.md
 └── LICENSE
-\`\`\`
+```
 
 ## 🤝 Contributing
-
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
-
 MIT License - see [LICENSE](LICENSE) file for details
 
 **Created by IraitzZZ**
 
 ## 🔗 Links
-
 - [GitHub Repository](https://github.com/IraitzZZ/offline-copilot)
 - [npm Package](https://www.npmjs.com/package/offline-copilot)
 - [Report Issues](https://github.com/IraitzZZ/offline-copilot/issues)
 
 ## 💡 Use Cases
-
 Perfect for:
 - Automating repetitive coding tasks
 - Working in air-gapped environments
@@ -177,11 +149,11 @@ Perfect for:
 - Offline development tools
 
 ---
-
 **Powered by IraitzZZ** | Made with ❤️ for developers who value privacy and offline capabilities
-\`\`\`
 
-```text file="LICENSE"
+---
+
+```text
 MIT License
 
 Copyright (c) 2025 IraitzZZ
@@ -206,3 +178,4 @@ SOFTWARE.
 
 ---
 Created by IraitzZZ
+```
